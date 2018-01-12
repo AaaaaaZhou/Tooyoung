@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>以图搜图</title>
+    <style type="text/css">
+        div.logo {
+            margin-top: 100px;
+            margin-bottom: 25px;
+        }
+        form {
+            width: 300px;
+            background-color: #EEE0E5
+            margin-left: 300px;
+            margin-top: 30px;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo" align="center"><img src="image/logo.jpg"></div>
+    </br>
+    <div style="text-align:center;"><h1>以图搜图</h1></div>
+    <table align="center" style="border-spacing:0px 20px;">
+        <form enctype="multipart/form-data" action="search_by_img.php" method = "post">
+            <tr>
+                <td>请选择图片路径</td>
+                <td><input name="pics" type="file" value="" onchange="alert(this.vlaue)"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" value="搜索"></td>
+                <td><input type="reset" name="reset" value="清空"></td>
+                <td><a href="homepage.php">返回</td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

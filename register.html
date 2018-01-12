@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <style type="text/css">
+        div.logo {
+            margin-top: 100px;
+            margin-bottom: 25px;
+        }
+        form {
+            width: 300px;
+            background-color: #EEE0E5
+            margin-left: 300px;
+            margin-top: 30px;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo" align="center"><img src="image/logo.jpg"></div>
+    </br>
+    <div style="text-align:center;"><h1>新用户注册</h1></div>
+    <table align="center">
+        <form action="register.php" method="post">
+            <tr>
+                <td>用户名</td>
+                <td><input type=text name="UserName"></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input type=password name="Password"></td>
+            </tr>
+            <tr>
+                <td>确认密码</td>
+                <td><input type=password name="PasswordCheck"></td>
+            </tr>
+            <tr>
+                <td><input type=submit name="ok" value="点此完成注册"></td>
+                <td><a href="homepage.php">返回</td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <style type="text/css">
+        div.box {
+            width: 400px;
+            background-color: #FFFFFF;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -200px;
+            margin-top: -400px;
+        }
+        div.logo {
+            margin-top: 100px;
+            margin-bottom: 25px;
+        }
+        form {
+            width: 300px;
+            background-color: #EEE0E5
+            margin-left: 300px;
+            margin-top: 30px;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body style="background-color:#FFF;">
+    <div class="logo" align="center"><img src="image/logo.jpg"></div>
+    </br>
+    <div style="text-align:center;"><h1>登录</h1></div>
+    <table align="center">
+        <form action="login.php" method="post">
+            <tr>
+                <td>用户名</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td><button type="submit" name="submit">登录</button></td>
+                <td><a href="homepage.php">返回</a></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
+
